@@ -4,166 +4,179 @@
 
 Based in Pakistan. Every repository below was built, run and measured: the numbers in each
 README are what the code produced on a machine, and each one says how to reproduce them.
+The work is also on two portfolio sites, [**Computer Vision**](https://vision-portfolio-woad.vercel.app) and [**AI Engineering**](https://ai-engineering-hammas.vercel.app)
+([every project by heading](https://hammas-portfolio-two.vercel.app)), with notebooks and datasets on [**Kaggle**](https://www.kaggle.com/muhammadhammas13).
 
-**82 public repositories · Python.**
+**77 public repositories · Python.**
 
-**Portfolio:** [Computer Vision](https://vision-portfolio-woad.vercel.app) · [AI Engineering](https://ai-engineering-hammas.vercel.app) · [All projects by heading](https://hammas-portfolio-two.vercel.app) · [Kaggle](https://www.kaggle.com/muhammadhammas13)
+**Portfolio:** [Computer Vision](https://vision-portfolio-woad.vercel.app) · [AI Engineering](https://ai-engineering-hammas.vercel.app) · [All projects by heading](https://hammas-portfolio-two.vercel.app) · [Kaggle](https://www.kaggle.com/muhammadhammas13) · [Kaggle index](https://www.kaggle.com/code/muhammadhammas13/portfolio-index-every-project-by-heading)
 
 ---
 
-## Repositories
+### Self-Hosted Products
 
-Grouped by area, one line each.
+Full applications with a UI and a backend, built to run on your own machine. [Open the page →](https://self-hosted-products.vercel.app)
 
-### Products
+| Repository | What it is | Links |
+|---|---|---|
+| [**studyloop**](https://github.com/hammasbuilds/studyloop) | Turn any textbook or web page into a personal tutor: course outline, answers quoted from the book, quizzes, BKT mastery tracking, Urdu questions. CPU-only, works offline. | [live](https://studyloop-iota.vercel.app) · [Kaggle](https://www.kaggle.com/code/muhammadhammas13/studyloop-demo) |
+| [**analyst-in-a-box**](https://github.com/hammasbuilds/analyst-in-a-box) | AI back office for a small business: ask your data in English or Roman Urdu (read-only SQL shown), coherent forecasts, fraud screen with reasons, explainable customer risk, approval workflows with an audit trail. | [live](https://analyst-in-a-box-bay.vercel.app) · [Kaggle](https://www.kaggle.com/code/muhammadhammas13/analyst-in-a-box-demo) |
+| [**llm-control-room**](https://github.com/hammasbuilds/llm-control-room) | Self-hosted control plane for LLM apps: gateway with budgets and redaction, cheapest-sufficient-model router, cost and drift observability, canary releases with outage-aware rollback, bounded agent runs, sandbox. Works with no API key. | [live](https://llm-control-room.vercel.app) · [Kaggle](https://www.kaggle.com/code/muhammadhammas13/llm-control-room-demo) |
+| [**book-to-skill**](https://github.com/hammasbuilds/book-to-skill) | Turn a technical book PDF into an agent skill, and measure how much of the book the skill still knows. |  |
+| [**web-to-markdown**](https://github.com/hammasbuilds/web-to-markdown) | Web pages to agent-ready markdown with the Python standard library alone, measured on 3,975 hand-labelled pages. |  |
 
-- [**studyloop**](https://github.com/hammasbuilds/studyloop) - Turns a textbook or web page into a personal tutor: course outline, answers quoted from the book, quizzes and mastery tracking
-- [**analyst-in-a-box**](https://github.com/hammasbuilds/analyst-in-a-box) - An AI back office for a small business: questions answered with the SQL shown, coherent forecasts, a fraud screen with reasons, approval gates
-- [**llm-control-room**](https://github.com/hammasbuilds/llm-control-room) - A self-hosted control plane for LLM apps: gateway with budgets and redaction, a cheapest-sufficient-model router, cost and drift monitoring
-- [**clause**](https://github.com/hammasbuilds/clause) - Contract review for small firms, on 2,266 EDGAR contracts and measured against CUAD
-- [**postmortem**](https://github.com/hammasbuilds/postmortem) - Agent failure attribution: which step broke the run, labelled by replaying it
-- [**scribe**](https://github.com/hammasbuilds/scribe) - An Urdu desk over scribe-100k, 100,000 natively sourced Urdu task items
-- [**pak-law-assistant**](https://github.com/hammasbuilds/pak-law-assistant) - Question answering over Pakistani statutes that will not cite a repealed provision
+### LLM & Agentic AI Tools
 
-### Fintech & insurance
+MCP servers and agent tooling that report what they cannot do. [Open the page →](https://tools-and-measurements.vercel.app)
 
-- [**fintech-lab**](https://github.com/hammasbuilds/fintech-lab) - Three fintech products on the standard library: an ISO 8583 message workbench, a lending-policy sandbox and a Roman Urdu transaction assistant
-- [**credit-risk-engine**](https://github.com/hammasbuilds/credit-risk-engine) - A logistic credit scorecard with WoE/IV binning, reason codes and a fairness audit
-- [**ledger-truth**](https://github.com/hammasbuilds/ledger-truth) - An audit of FinQA questions against the filings they were written from
-- [**insurance-mlops**](https://github.com/hammasbuilds/insurance-mlops) - A point-in-time feature store, skew detection and a release gate that refuses rather than warns
+| Repository | What it is | Links |
+|---|---|---|
+| [**pak-law-assistant**](https://github.com/hammasbuilds/pak-law-assistant) | Legal question answering over Pakistani statutes that will not cite a repealed provision. Temporal corpus, citation parsing for statutory/subordinate/reported forms, BM25 chosen for inspectability, and four refusal conditions. 49 tests, zero dependencies. | [live](https://pak-law-assistant.vercel.app) · [Kaggle](https://www.kaggle.com/code/muhammadhammas13/pakistan-law-mcp-statute-law-as-of-a-date) |
+| [**repo-recon**](https://github.com/hammasbuilds/repo-recon) | Six read-only readers for a Python codebase you did not write - structure, impact, modernisation risk, release readiness - behind one MCP server with zero dependencies that writes nothing | [live](https://repo-recon-henna.vercel.app) · [Kaggle](https://www.kaggle.com/code/muhammadhammas13/repo-recon-mcp-six-readers-for-a-codebase) |
 
-### Machine learning
+### Business & Career Tools
 
-- [**machine-learning**](https://github.com/hammasbuilds/machine-learning) - Twenty applied ML projects on public data, each measured end to end
-- [**causal-inference**](https://github.com/hammasbuilds/causal-inference) - What it costs to get the causal structure wrong, on data with a planted true effect
-- [**knowledge-tracing**](https://github.com/hammasbuilds/knowledge-tracing) - BKT, PFA, IRT and DKT from scratch, and how much of DKT's lead was duplicated rows
-- [**demand-forecast-platform**](https://github.com/hammasbuilds/demand-forecast-platform) - Hierarchical forecasting with reconciliation, Croston, ETS and a rolling-origin backtest
+Tools for finding clients and finding work. [Open the page →](https://business-career-tools.vercel.app)
 
-### Computer vision
+| Repository | What it is | Links |
+|---|---|---|
+| [**rankloom**](https://github.com/hammasbuilds/rankloom) | Seven growth tools in one web app: site audit, AI visibility, lead finder, Search Console work list, content studio, client reports - plus Job Radar. | [live](https://business-career-tools.vercel.app/rankloom/) |
+| [**job-radar**](https://github.com/hammasbuilds/job-radar) | Junior AI job crawler: roles in Europe, the Gulf, Pakistan and Asia with the route from Pakistan shown; YC companies, portfolios, fellowships, platforms. | [live](https://business-career-tools.vercel.app/job-radar/) |
 
-- [**classical-computer-vision**](https://github.com/hammasbuilds/classical-computer-vision) - Classical CV methods implemented and compared — no deep learning, no training, no GPU
-- [**deep-computer-vision**](https://github.com/hammasbuilds/deep-computer-vision) - Recognition and understanding: defect localisation, matting, pose, video action recognition, video segmentation and anomaly detection
+### Games & Reinforcement Learning
 
-### Generative vision
+Agents that play real downloadable games on a laptop CPU. [Open the page →](https://game-playing-agents.vercel.app)
 
-- [**generative-vision-lab**](https://github.com/hammasbuilds/generative-vision-lab) - Image restoration, x6 super-resolution, GAN translation and text-to-image, fine-tuned and compared, with a viewer page
-- [**super-resolution**](https://github.com/hammasbuilds/super-resolution) - Single-image 4x super-resolution: classical baselines and fine-tuned networks under one protocol, with a try-it page
+| Repository | What it is | Links |
+|---|---|---|
+| [**game-playing-agents**](https://github.com/hammasbuilds/game-playing-agents) | Eight agents that play eight real downloadable games on a laptop CPU, one numbered folder each: the agent, an eight-second film of it playing, a screenshot, and the result beside the untrained network with its error bar. | [live](https://game-playing-agents.vercel.app) · [Kaggle](https://www.kaggle.com/code/muhammadhammas13/does-a-wider-network-help-a-doom-agent) |
+| [**game-agents**](https://github.com/hammasbuilds/game-agents) | Eight agents that play eight real downloadable games on a laptop CPU: PPO on raw frames, a Crafter planner with no learned weights, a Brogue agent driven by screenshots and keystrokes, and a MuJoCo robot - every score on held-out episodes with its error bar. |  |
 
-### 3D vision
+### Computer Vision & ML Research
 
-- [**3d-computer-vision**](https://github.com/hammasbuilds/3d-computer-vision) - Reconstructing geometry from images and point clouds, measured against known or planted ground truth
+50 projects: 3D, recognition, generation, classical vision and causal inference, each measured against a baseline. [Open the page →](https://vision-portfolio-woad.vercel.app)
 
-### Visualisation
+| Repository | What it is | Links |
+|---|---|---|
+| [**3d-computer-vision**](https://github.com/hammasbuilds/3d-computer-vision) | Reconstructing geometry from images and point clouds - classical and learned, measured against ground truth that is known or planted | [live](https://3d-vision-omega.vercel.app) |
+| [**deep-computer-vision**](https://github.com/hammasbuilds/deep-computer-vision) | Recognition and understanding: segmentation, localisation and detection. A demonstration / portfolio project. | [live](https://recognition-vision.vercel.app) |
+| [**generative-vision-lab**](https://github.com/hammasbuilds/generative-vision-lab) | Image-to-image restoration and translation, plus generation from text. A demonstration / portfolio project. | [live](https://generative-vision-gamma.vercel.app) |
+| [**super-resolution**](https://github.com/hammasbuilds/super-resolution) | Single-image 4x super-resolution: multiple architectures fine-tuned and benchmarked under one protocol | [Kaggle](https://www.kaggle.com/code/muhammadhammas13/super-resolution-realesrgan) |
+| [**causal-inference**](https://github.com/hammasbuilds/causal-inference) | What it costs to get the causal structure wrong - measured on data where the true effect is planted | [live](https://vision-portfolio-woad.vercel.app/#research) |
+| [**visual-analytics**](https://github.com/hammasbuilds/visual-analytics) | Making models and datasets legible: training behaviour, embeddings, attribution and change over time | [live](https://training-dynamics.vercel.app) |
 
-- [**visual-analytics**](https://github.com/hammasbuilds/visual-analytics) - Making models and datasets legible: training behaviour, embeddings, attribution
+### Coding Agents
 
-### LLM-based agents
+Coding agents built from scratch, and the harnesses that price each part of them. [Open the page →](https://coding-agents.vercel.app)
 
-- [**agentic-ai-llm**](https://github.com/hammasbuilds/agentic-ai-llm) - Agent infrastructure, measurement apps and business agents, running on local models
-- [**langchain-llm**](https://github.com/hammasbuilds/langchain-llm) - LangChain projects: structured output, retrieval, memory, injection defence, judge bias
-- [**langgraph-llm**](https://github.com/hammasbuilds/langgraph-llm) - One project per LangGraph shape: revision loops, routing, parallel merge, checkpoints
-- [**mcp-llm-rag**](https://github.com/hammasbuilds/mcp-llm-rag) - Six agentic projects on real benchmarks, running entirely on local models
-- [**deep-research-agent**](https://github.com/hammasbuilds/deep-research-agent) - A research agent that deduplicates sources and reports disagreement between them
-- [**terminal-agent**](https://github.com/hammasbuilds/terminal-agent) - A terminal coding agent whose harness replays every gold patch before a model sees a task
-- [**harness-agent-scratch**](https://github.com/hammasbuilds/harness-agent-scratch) - A minimal coding agent from scratch: loop, tools, permissions, sandbox, compaction, subagents
-- [**harness-ablation**](https://github.com/hammasbuilds/harness-ablation) - A coding-agent harness with every component switchable, and the ablation that prices each
-- [**browser-agent**](https://github.com/hammasbuilds/browser-agent) - Page encodings for browser agents on MiniWoB++, and what each one throws away
-- [**enterprise-ops-crew**](https://github.com/hammasbuilds/enterprise-ops-crew) - A multi-agent back office with playbooks, SLAs, approval gates and an audit trail
-- [**worktree-fleet**](https://github.com/hammasbuilds/worktree-fleet) - N coding agents in parallel git worktrees behind a tested merge queue, measured on real history
-- [**trace-to-patch**](https://github.com/hammasbuilds/trace-to-patch) - A failing test to a verified patch, or a reported "could not reproduce"
-- [**repo-surgeon**](https://github.com/hammasbuilds/repo-surgeon) - Mutation-gated codebase migration that refuses the changes it cannot prove are safe
-- [**pr-referee**](https://github.com/hammasbuilds/pr-referee) - A code reviewer that reports only what it can prove, measured against one that guesses
-- [**agent-memory**](https://github.com/hammasbuilds/agent-memory) - A cross-session memory layer for agents, and what "remember everything and search" actually finds
+| Repository | What it is | Links |
+|---|---|---|
+| [**harness-agent-scratch**](https://github.com/hammasbuilds/harness-agent-scratch) | A minimal coding agent built from scratch: agent loop, tools, skills, todos, permissions, sandbox, compaction, subagents. No framework, no SDK, CPU-friendly. |  |
+| [**harness-ablation**](https://github.com/hammasbuilds/harness-ablation) | A coding-agent harness with every component switchable, and the ablation that prices each one. |  |
+| [**terminal-agent**](https://github.com/hammasbuilds/terminal-agent) | A terminal coding agent whose evaluation harness replays every gold patch through the agent's own tools before a model sees a task. |  |
+| [**worktree-fleet**](https://github.com/hammasbuilds/worktree-fleet) | Run N coding agents in parallel git worktrees behind a tested merge queue, and measure on real history what the parallelism costs. |  |
+| [**trace-to-patch**](https://github.com/hammasbuilds/trace-to-patch) | A failing test to a verified patch - or an honest 'could not reproduce'. Measured: a traceback makes localisation harder, not easier. |  |
+| [**pr-referee**](https://github.com/hammasbuilds/pr-referee) | A code reviewer that only reports what it can prove - and measures its precision against an LLM reviewer on labelled diffs |  |
+| [**repo-surgeon**](https://github.com/hammasbuilds/repo-surgeon) | Mutation-gated codebase migration: it refuses the changes it cannot prove. AST + differential testing + local 14B model. |  |
+| [**minimal-diff**](https://github.com/hammasbuilds/minimal-diff) | Among one-edit patches that pass the tests, "the smallest" depends on how you count size and break ties. |  |
+| [**browser-agent**](https://github.com/hammasbuilds/browser-agent) | Browser-agent page encodings on 101 MiniWoB++ tasks: what each encoding throws away before a model ever reads it. |  |
+| [**agent-sandbox**](https://github.com/hammasbuilds/agent-sandbox) | Run AI-generated code under named hardening profiles, then measure what each profile actually stops. |  |
+| [**agent-memory**](https://github.com/hammasbuilds/agent-memory) | A cross-session memory layer for agents, and a measurement of what "remember everything and search" actually finds, question type by question type. |  |
+| [**bounded-agent-runtime**](https://github.com/hammasbuilds/bounded-agent-runtime) | An agent runtime that enforces its own limits - cost, steps, time, loop detection, approval gates - and a chaos suite that proves it. 21 tests, no model needed. |  |
 
-### LLM infrastructure
+### LLM Evaluation & Benchmark Audits
 
-- [**llm-gateway**](https://github.com/hammasbuilds/llm-gateway) - One entry point for every LLM call: routing, per-tenant budgets, fallbacks, redaction
-- [**llm-observability-platform**](https://github.com/hammasbuilds/llm-observability-platform) - Cost per success, latency percentiles and PSI prompt-drift detection without storing prompts
-- [**model-serving-platform**](https://github.com/hammasbuilds/model-serving-platform) - Multi-model serving with A/B, canary and shadow routing, SLO monitoring and auto-rollback
-- [**bounded-agent-runtime**](https://github.com/hammasbuilds/bounded-agent-runtime) - An agent runtime that enforces limits in code, with a chaos suite that tests them
-- [**agent-sandbox**](https://github.com/hammasbuilds/agent-sandbox) - Runs AI-generated code under named hardening profiles and measures what each one stops
-- [**router-14b**](https://github.com/hammasbuilds/router-14b) - When a smaller model is sufficient, and what predicts it
-- [**llm-os**](https://github.com/hammasbuilds/llm-os) - A microkernel for LLM agents: processes, preemption, signals, quotas, IPC and tiered context memory
-- [**rag-forge**](https://github.com/hammasbuilds/rag-forge) - Production RAG that locates every quote in the source before it becomes a citation
-- [**sql-analyst-agent**](https://github.com/hammasbuilds/sql-analyst-agent) - English questions to SQL, with three safety layers and the generated SQL always shown
-- [**doc-intelligence-api**](https://github.com/hammasbuilds/doc-intelligence-api) - Document extraction with confidence routing and cross-field arithmetic validation
-- [**incident-copilot**](https://github.com/hammasbuilds/incident-copilot) - Reduces log lines and alarms to one incident with a suspect, using Drain and robust z-scores
-- [**qlora-finetune-suite**](https://github.com/hammasbuilds/qlora-finetune-suite) - Loss masking, VRAM budgeting and leak-free splits — the pre-GPU parts of fine-tuning
-- [**book-to-skill**](https://github.com/hammasbuilds/book-to-skill) - Turns a technical book PDF into an agent skill and measures how much of the book it keeps
-- [**web-to-markdown**](https://github.com/hammasbuilds/web-to-markdown) - Web pages to agent-ready markdown with the standard library alone, measured on 3,975 pages
+What a benchmark score actually measures: leakage, shortcuts and extraction effects, on public data. [Open the page →](https://llm-evaluation.vercel.app)
 
-### LLM evaluation & benchmarks
+| Repository | What it is | Links |
+|---|---|---|
+| [**code-llm-lab**](https://github.com/hammasbuilds/code-llm-lab) | Twenty measurements of a local coder model: where model size pays, when self-debugging stops helping, what model-written tests actually catch, and how much of a benchmark score is the prompt. |  |
+| [**code-eval-harness**](https://github.com/hammasbuilds/code-eval-harness) | the same generations score 0% or 85.4% on HumanEval depending only on how the code is extracted from the model output. |  |
+| [**mbpp-false-accepts**](https://github.com/hammasbuilds/mbpp-false-accepts) | MBPP gives each problem three assert statements. Measuring how much wrong code three asserts accept. | [Kaggle](https://www.kaggle.com/datasets/muhammadhammas13/mbpp-false-accepts) |
+| [**swebench-localization**](https://github.com/hammasbuilds/swebench-localization) | 51.3% of SWE-bench Lite never names the file you must fix, so a single score cannot separate retrieval failure from reasoning failure. | [Kaggle](https://www.kaggle.com/datasets/muhammadhammas13/swebench-lite-file-listings) |
+| [**devign-leakage**](https://github.com/hammasbuilds/devign-leakage) | cross-split overlap is smaller than assumed, but every exact duplicate inside the test set carries conflicting labels. |  |
+| [**router-14b**](https://github.com/hammasbuilds/router-14b) | The weaker model is enough 53.6% of the time - and a character count predicts human preference 61.7%, on 57,477 Arena votes |  |
+| [**faithful**](https://github.com/hammasbuilds/faithful) | Four ways a summarisation faithfulness checker looks better than it is — measured on 10,066 human-labelled summaries, and on a 14B judge that invents its own evidence in 6% of its flags. |  |
+| [**doubt**](https://github.com/hammasbuilds/doubt) | An exact bound on how well a fact-verification model can score while ignoring the evidence: 0.502 on VitaminC, 0.999 on FEVER |  |
+| [**outcome**](https://github.com/hammasbuilds/outcome) | The ECtHR outcome benchmark scores 0.859 micro-F1 if you ignore the facts and repeat the complaint; reading them tops out at 0.309 |  |
+| [**ledger-truth**](https://github.com/hammasbuilds/ledger-truth) | 7.6% of FinQA questions require a number that appears nowhere in the filing they were written against |  |
+| [**contract-reader**](https://github.com/hammasbuilds/contract-reader) | An 8k context window sees 41% of CUAD's answers - and the 41% is almost entirely the four fields on the first page |  |
+| [**trial-match**](https://github.com/hammasbuilds/trial-match) | Why you cannot parse an age floor out of clinical trial eligibility prose: 89.6% of apparent registry contradictions are the checker's fault |  |
+| [**urdu-desk**](https://github.com/hammasbuilds/urdu-desk) | 9.2% of BBC Urdu articles are typed with Arabic letters standing in for Urdu ones - and Unicode NFC will not merge them |  |
 
-- [**code-eval-harness**](https://github.com/hammasbuilds/code-eval-harness) - How much a code benchmark's score depends on the extraction protocol, measured
-- [**code-llm-lab**](https://github.com/hammasbuilds/code-llm-lab) - Local coder models measured on MBPP, HumanEval and Devign
-- [**mbpp-false-accepts**](https://github.com/hammasbuilds/mbpp-false-accepts) - How much wrong code MBPP's three assert statements accept
-- [**devign-leakage**](https://github.com/hammasbuilds/devign-leakage) - A train/test leakage and duplicate-label audit of the Devign vulnerability dataset
-- [**swebench-localization**](https://github.com/hammasbuilds/swebench-localization) - How often a SWE-bench issue names the file that has to be changed
-- [**rag-llm-eval**](https://github.com/hammasbuilds/rag-llm-eval) - Nine RAG techniques measured as retrieval on one corpus, with almost no LLM in the loop
-- [**context-bench**](https://github.com/hammasbuilds/context-bench) - RAG, CAG and MAG compared on real data with ground-truth answers
-- [**faithful**](https://github.com/hammasbuilds/faithful) - A summarisation faithfulness checker evaluated on 10,066 human judgements
-- [**doubt**](https://github.com/hammasbuilds/doubt) - An exact bound on how well a fact-verification model scores while ignoring the evidence
-- [**outcome**](https://github.com/hammasbuilds/outcome) - What the ECtHR outcome benchmark scores when the facts are ignored entirely
-- [**contract-reader**](https://github.com/hammasbuilds/contract-reader) - Contract question answering on CUAD, and what a short context window can reach
-- [**trial-match**](https://github.com/hammasbuilds/trial-match) - Parsing eligibility criteria from clinical trial registry text, and where it breaks
+### RAG, Agents & Frameworks
 
-### Urdu & NLP
+Retrieval, document and multi-agent systems, and LangChain, LangGraph and MCP projects. [Open the page →](https://rag-and-agents.vercel.app)
 
-- [**nlp-llm-ml**](https://github.com/hammasbuilds/nlp-llm-ml) - Classic NLP techniques measured against each other on one corpus
-- [**urdunlp**](https://github.com/hammasbuilds/urdunlp) - Urdu and Roman Urdu text processing. Pure Python, zero dependencies, no model downloads
-- [**urdu-desk**](https://github.com/hammasbuilds/urdu-desk) - An encoding audit of Urdu news text, where Arabic letters stand in for Urdu ones
+| Repository | What it is | Links |
+|---|---|---|
+| [**rag-forge**](https://github.com/hammasbuilds/rag-forge) | Production RAG that refuses to guess. Hybrid retrieval over one Postgres, cross-encoder reranking, and citations verified by locating every quote in the real source before it is shown. Runs on SQLite for a zero-dependency demo. 28 tests. |  |
+| [**rag-llm-eval**](https://github.com/hammasbuilds/rag-llm-eval) | RAG techniques measured as retrieval, on 14,602 real HotpotQA passages, with no language model in the loop. Retrieving smaller chunks made it worse; multi-query fusion made it worse; a second retrieval round with no reasoner was worth +7.1 points on bridge questions. |  |
+| [**context-bench**](https://github.com/hammasbuilds/context-bench) | RAG vs CAG vs MAG, measured on real data with ground-truth answers. Where the cost crossover actually is, and why prompt caching decides it. |  |
+| [**sql-analyst-agent**](https://github.com/hammasbuilds/sql-analyst-agent) | Ask a database questions in English. It cannot damage the database and it shows you the SQL. Three safety layers with the prompt as the weakest; CI attempts five real writes as the agent role on every push. 32 tests. |  |
+| [**doc-intelligence-api**](https://github.com/hammasbuilds/doc-intelligence-api) | Document processing that sends a human one question, not one document. Field-level confidence routing, cross-field arithmetic validation that catches what OCR confidence never will, and Pakistani formats: CNIC, NTN, STRN, PK IBAN. 44 tests, zero dependencies. |  |
+| [**deep-research-agent**](https://github.com/hammasbuilds/deep-research-agent) | A research agent that tells you when sources disagree instead of picking one, deduplicates republished copies before counting corroboration, and verifies every quote against the fetched text. 48 tests, no API key needed. |  |
+| [**enterprise-ops-crew**](https://github.com/hammasbuilds/enterprise-ops-crew) | A multi-agent back office that resolves tickets across four mock enterprise systems and stops before anything irreversible. Business-hours SLAs, playbook execution, approval gates, full audit trail. 39 tests. |  |
+| [**langchain-llm**](https://github.com/hammasbuilds/langchain-llm) | LangChain projects built around the failure each one is usually demoed past. Constrained decoding looked 19 points less accurate than plain prompting and is really 3x more accurate. Retrieval on documents that already fit in context cost 53 points of accuracy. Local models, no API key, 69 tests. |  |
+| [**langgraph-llm**](https://github.com/hammasbuilds/langgraph-llm) | LangGraph projects built around the failure each one is usually demoed past. Doubling a revision loop from 3 to 6 iterations changed nothing; a confidence gate dropped clean-ticket accuracy from 100% to 33%; a silent branch failure was disclosed 0% of the time. Local models, no API key, 76 tests. |  |
+| [**mcp-llm-rag**](https://github.com/hammasbuilds/mcp-llm-rag) | chain-of-thought made every model worse on TruthfulQA, and SWE-bench patches failed on diff formatting rather than reasoning. All local, no API keys. |  |
 
-### Developer tools (non-LLM)
+### LLM Platform & MLOps
 
-- [**blast-radius**](https://github.com/hammasbuilds/blast-radius) - Reports what a dependency upgrade changes in a package's public API
-- [**cartographer**](https://github.com/hammasbuilds/cartographer) - Compares what a repository's imports declare against what its git history shows
-- [**commit-history-forensics**](https://github.com/hammasbuilds/commit-history-forensics) - Tests whether a commit history describes work that actually happened
-- [**docstring-drift**](https://github.com/hammasbuilds/docstring-drift) - Static detection of docstrings that no longer match the code they document
-- [**flake-detective**](https://github.com/hammasbuilds/flake-detective) - Finds flaky tests and reports what each one depends on — order, hash seed, clock
-- [**perf-hunter**](https://github.com/hammasbuilds/perf-hunter) - Finds performance regressions and measures the gate's own false-alarm rate
-- [**test-impact-oracle**](https://github.com/hammasbuilds/test-impact-oracle) - Runs only the tests a change could affect, and measures what that skips
-- [**suite-auditor**](https://github.com/hammasbuilds/suite-auditor) - Mutation testing that reports a coverage gap only with the input that demonstrates it
-- [**minimal-diff**](https://github.com/hammasbuilds/minimal-diff) - Among one-edit patches that pass the tests, what "the smallest" actually depends on
-- [**notebook-to-package**](https://github.com/hammasbuilds/notebook-to-package) - Turns a Jupyter notebook into an installable package and checks the conversion
-- [**repo-recon**](https://github.com/hammasbuilds/repo-recon) - Six read-only readers for a Python codebase you did not write, behind one MCP server with zero dependencies
+Gateways, monitoring, serving, release gates and fine-tuning checks. [Open the page →](https://llm-platform-mlops.vercel.app)
 
-### Game-playing agents
+| Repository | What it is | Links |
+|---|---|---|
+| [**llm-gateway**](https://github.com/hammasbuilds/llm-gateway) | One entry point for every LLM call: model routing by difficulty, per-tenant budgets and rate limits, fallback chains, caching, and guardrails that redact secrets before they leave. 42 tests, no API key needed. |  |
+| [**llm-observability-platform**](https://github.com/hammasbuilds/llm-observability-platform) | Monitoring built for LLM applications: cost per feature and per success, latency percentiles that exclude cache hits, grounding rates, and prompt drift detected by PSI without ever storing a prompt. 49 tests, no numpy. |  |
+| [**model-serving-platform**](https://github.com/hammasbuilds/model-serving-platform) | Multi-model serving: A/B testing with sticky assignment, canary rollout, shadow traffic, per-version SLOs and auto-rollback that knows the difference between a bad canary and an upstream outage. 31 tests. |  |
+| [**insurance-mlops**](https://github.com/hammasbuilds/insurance-mlops) | The four things that break a deployed model: point-in-time feature leakage, training/serving skew, undocumented models, and unlawful data reuse. A release gate that refuses rather than warns. 42 tests, zero dependencies. |  |
+| [**incident-copilot**](https://github.com/hammasbuilds/incident-copilot) | AIOps: Drain log-template extraction, anomaly detection robust to the outliers it is looking for, and correlation that turns forty alarms into one incident with a suspect. 39 tests, no numpy. |  |
+| [**qlora-finetune-suite**](https://github.com/hammasbuilds/qlora-finetune-suite) | The parts of fine-tuning that go wrong before the GPU is touched: VRAM budgeting, loss masking that stops the model learning to generate prompts, leak-free splits, schedules, and before/after evaluation. 75 tests, no GPU required. |  |
 
-- [**game-agents**](https://github.com/hammasbuilds/game-agents) - AI agents that play real games on a laptop CPU: PPO on raw DOOM frames, a Crafter planner, a Brogue agent, and an arcade
+### Data Science & Applied ML
+
+Classical ML, NLP and forecasting, each built around the mistake that makes its answer wrong. [Open the page →](https://data-science-ml.vercel.app)
+
+| Repository | What it is | Links |
+|---|---|---|
+| [**machine-learning**](https://github.com/hammasbuilds/machine-learning) | Twenty machine-learning projects on public data. Each built around the mistake that makes its answer wrong: search bias, target leakage, overlapping windows, imbalance, confounding. |  |
+| [**knowledge-tracing**](https://github.com/hammasbuilds/knowledge-tracing) | BKT, PFA, IRT and DKT written from scratch, and how much of deep knowledge tracing's lead on ASSISTments was duplicated rows. |  |
+| [**nlp-llm-ml**](https://github.com/hammasbuilds/nlp-llm-ml) | BM25 lands within 8 points of a pretrained neural embedding for 1/270th of the indexing cost. |  |
+| [**credit-risk-engine**](https://github.com/hammasbuilds/credit-risk-engine) | A credit scorecard that explains every decline in points: WoE/IV binning with leakage detection, PDO point allocation, adverse-action reason codes, calibration, and a fairness audit that reports all four incompatible measures. 40 tests, zero dependencies. |  |
+| [**demand-forecast-platform**](https://github.com/hammasbuilds/demand-forecast-platform) | Hierarchical demand forecasting where the numbers add up: reconciliation with coherence asserted, Croston for intermittent demand, and a rolling-origin backtest that proves it cannot leak. 41 tests, zero dependencies. |  |
 
 ### Bioinformatics
 
-- [**assay-drift**](https://github.com/hammasbuilds/assay-drift) - Checks whether published PCR diagnostic assays still match circulating sequences
-- [**primer-designer**](https://github.com/hammasbuilds/primer-designer) - Diagnostic PCR primer design with nearest-neighbour thermodynamics and drift alerts
-- [**clcuv-surveillance**](https://github.com/hammasbuilds/clcuv-surveillance) - Genomic surveillance: variant frequency, selection, phylogeny and diagnostic coverage
+Viral genomes, PCR assays and primers, measured on real sequence data. [Open the page →](https://bioinformatics.vercel.app)
 
-### Profile & indexes
+| Repository | What it is | Links |
+|---|---|---|
+| [**assay-drift**](https://github.com/hammasbuilds/assay-drift) | Do published PCR diagnostic assays still match what is circulating? 2,765 GenBank genomes, five published assays, zero dependencies. | [Kaggle](https://www.kaggle.com/datasets/muhammadhammas13/pcr-assay-drift-sars-cov-2) |
+| [**clcuv-surveillance**](https://github.com/hammasbuilds/clcuv-surveillance) | Genomic surveillance for Cotton Leaf Curl Virus on real NCBI GenBank sequences: which variant is rising and is that real, is anything selecting for it, and how are strains related. Collapsing clonal duplicates turned 9 'emerging variants' into 0. 101 tests, zero dependencies. |  |
+| [**primer-designer**](https://github.com/hammasbuilds/primer-designer) | Diagnostic PCR primers that survive viral drift. Nearest-neighbour thermodynamics, conservation analysis, degenerate primers, and alerts when a deployed assay starts going blind because a mutation landed at the 3-prime end. 64 tests, zero dependencies. |  |
 
-- [**hammasbuilds**](https://github.com/hammasbuilds/hammasbuilds) - This profile
-- [**llm-agentic-datasets**](https://github.com/hammasbuilds/llm-agentic-datasets) - Index of the eight published reasoning datasets, with their shortcut baselines
+### Python Packages & Developer Tools
 
----
+Installable packages and zero-dependency tools for codebases and tests. [Open the page →](https://python-tools-steel.vercel.app)
 
-## What I work on
+| Repository | What it is | Links |
+|---|---|---|
+| [**urdunlp**](https://github.com/hammasbuilds/urdunlp) | Urdu and Roman Urdu NLP: normalisation, tokenisation, transliteration, stopwords. Zero dependencies, 40 tests. | [live](https://python-tools-steel.vercel.app) · [Kaggle](https://www.kaggle.com/code/muhammadhammas13/urdunlp-demo) |
+| [**blast-radius**](https://github.com/hammasbuilds/blast-radius) | What a dependency upgrade actually changes - including the silent behaviour changes nothing warns you about | [live](https://python-tools-steel.vercel.app) · [Kaggle](https://www.kaggle.com/code/muhammadhammas13/blast-radius-demo) |
+| [**flake-detective**](https://github.com/hammasbuilds/flake-detective) | Find flaky tests and say what they depend on - order, hash seed, clock, or nothing at all. Zero dependencies. | [live](https://python-tools-steel.vercel.app) · [Kaggle](https://www.kaggle.com/code/muhammadhammas13/flake-detective-demo) |
+| [**suite-auditor**](https://github.com/hammasbuilds/suite-auditor) | Mutation testing that refuses to claim a gap it cannot prove. Found 42% of its own sibling repo untested. | [live](https://python-tools-steel.vercel.app) · [Kaggle](https://www.kaggle.com/code/muhammadhammas13/suite-auditor-demo) |
+| [**test-impact-oracle**](https://github.com/hammasbuilds/test-impact-oracle) | Run only the tests a change could possibly affect - and measure what that skips, not just what it saves. Zero dependencies. |  |
+| [**perf-hunter**](https://github.com/hammasbuilds/perf-hunter) | Find performance regressions, and measure how often the gate cries wolf. Zero dependencies. |  |
+| [**cartographer**](https://github.com/hammasbuilds/cartographer) | Compare what a repository's imports declare against what its git history reveals. Zero dependencies. |  |
+| [**docstring-drift**](https://github.com/hammasbuilds/docstring-drift) | finds docstrings documenting parameters their function does not have. 101 across 8 major libraries. Pure AST: no imports, no execution, zero runtime dependencies. |  |
+| [**commit-history-forensics**](https://github.com/hammasbuilds/commit-history-forensics) | detects fabricated contribution graphs from timestamp skew, uniformity and cadence. 25/25 genuine repos clean, 2/2 fakes caught, including one that hides the timestamp tell. |  |
+| [**notebook-to-package**](https://github.com/hammasbuilds/notebook-to-package) | Turn a Jupyter notebook into an installable package, and prove the conversion kept its behaviour. Zero dependencies. |  |
 
-**Retrieval** that cites its sources and declines when the evidence is thin.
-**Agents** whose limits are enforced by the runtime rather than requested in a prompt.
-**Generative AI** as an engineering problem — fine-tuning, routing, cost and evaluation.
-**Computer vision**, classical and deep — restoration, translation, segmentation, detection.
-**Applied ML and statistics** on public data, measured end to end.
-**Urdu NLP**, because tooling for 240 million speakers should not be rewritten by every
-project that needs it.
+### Datasets
 
----
+Reasoning datasets generated and labelled by code, published on Kaggle. [Open the page →](https://datasets-chi.vercel.app)
 
-## Stack
-
-`Python` · `FastAPI` · `PostgreSQL + pgvector` · `Redis` · `Docker` · `uv` · `PyTorch` ·
-`Transformers` / `PEFT` / `bitsandbytes` · `scikit-learn` · `pandas` / `NumPy` / `SciPy` /
-`statsmodels` · `sentence-transformers` · `OpenCV` / `scikit-image` ·
-`Ollama` / `Claude` / `HuggingFace` behind one interface · `Model Context Protocol` ·
-`LangChain` / `LangGraph` · `GitHub Actions`
-
----
-
-📫 Open to AI/ML engineering roles.
+| Repository | What it is | Links |
+|---|---|---|
+| [**llm-agentic-datasets**](https://github.com/hammasbuilds/llm-agentic-datasets) | Reasoning datasets - code-generated, code-verified. Links to each dataset on Kaggle. | [live](https://datasets-chi.vercel.app) · [Kaggle](https://www.kaggle.com/muhammadhammas13/datasets) |
