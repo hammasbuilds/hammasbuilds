@@ -1,6 +1,6 @@
 # Muhammad Hammas
 
-**AI Engineer — retrieval, agents, computer vision and applied ML.**
+**AI Engineer · Master's in Artificial Intelligence** — retrieval, agents, computer vision and applied ML.
 
 Based in Pakistan. Every repository below was built, run and measured: the numbers in each
 README are what the code produced on a machine, and each one says how to reproduce them.
