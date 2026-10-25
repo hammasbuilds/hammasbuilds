@@ -67,7 +67,7 @@ Agents that play real downloadable games on a laptop CPU. [Open the page →](ht
 
 ### Coding Agents
 
-Coding agents built from scratch, and the harnesses that price each part of them. [Open the page →](https://coding-agents.vercel.app)
+Coding agents built from scratch, and the harnesses that price each part of them. [Open the page →](https://coding-agents-iota.vercel.app)
 
 | Repository | What it is | Links |
 |---|---|---|
@@ -86,7 +86,7 @@ Coding agents built from scratch, and the harnesses that price each part of them
 
 ### LLM Evaluation & Benchmark Audits
 
-What a benchmark score actually measures: leakage, shortcuts and extraction effects, on public data. [Open the page →](https://llm-evaluation.vercel.app)
+What a benchmark score actually measures: leakage, shortcuts and extraction effects, on public data. [Open the page →](https://llm-evaluation-blush.vercel.app)
 
 | Repository | What it is | Links |
 |---|---|---|
@@ -148,7 +148,7 @@ Classical ML, NLP and forecasting, each built around the mistake that makes its 
 
 ### Bioinformatics
 
-Viral genomes, PCR assays and primers, measured on real sequence data. [Open the page →](https://bioinformatics.vercel.app)
+Viral genomes, PCR assays and primers, measured on real sequence data. [Open the page →](https://bioinformatics-ochre.vercel.app)
 
 | Repository | What it is | Links |
 |---|---|---|
